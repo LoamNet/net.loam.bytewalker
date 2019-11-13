@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Bytewalker</title>
 	<script data-ad-client="ca-pub-2171832932045792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
+    	<link rel="stylesheet" href="TemplateData/style.css">
+    	<script src="TemplateData/UnityProgress.js"></script>
+    	<script src="Build/UnityLoader.js"></script>
+    	<script>
+      		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/It exist.json", {onProgress: UnityProgress});
+    	</script>
 	<style type="text/css">
 		
 	</style>
@@ -10,7 +19,16 @@
 <body>
 <p>ByteWalker v0.1.1</p>
 <br/>
-<a href="https://ko-fi.com/loamnet"><button><strong>Donate</strong></button></a>
-<a href="https://patreon.com/loam"><button><strong>Patreon</strong></button></a>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Forgotten Tomes</div>
+      </div>
+    </div>
+	
+	<a href="https://ko-fi.com/loamnet"><button><strong>Donate</strong></button></a>
+	<a href="https://patreon.com/loam"><button><strong>Patreon</strong></button></a>
 </body>
 </html>

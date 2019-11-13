@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Bytewalker</title>
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
 	
 	<!-- Open Graph (and related) meta -->
 	<meta property="og:site_name" content="Bytewalker">
@@ -21,7 +22,6 @@
 	<script data-ad-client="ca-pub-2171832932045792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	
 	<!-- Unity resources -->
-	<link rel="shortcut icon" href="TemplateData/favicon.ico">
     	<link rel="stylesheet" href="TemplateData/style.css">
     	<script src="TemplateData/UnityProgress.js"></script>
     	<script src="Build/UnityLoader.js"></script>
@@ -31,7 +31,12 @@
     	</script>
 	
 	<style type="text/css">
-		
+		.social-donate:hover {
+		  color: rgb(120, 200, 140);
+		}
+		.social-patreon:hover {
+		  color: rgb(249, 104, 84);
+		}
 	</style>
 	
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,10 +46,10 @@
 </head>
 <body>
 	<!-- Aspirational donation buttons and friends -->
-	<p>Bytewalker v0.1.1</p>
+	<h2>Bytewalker v0.1.1</h2>
 	<br/>
-	<a href="https://ko-fi.com/loamnet"><button><strong>Donate</strong></button></a>
-	<a href="https://patreon.com/loam"><button><strong>Patreon</strong></button></a>
+	<a href="https://ko-fi.com/loamnet"><button class="btn btn-outline-dark social-donate"><strong>Donate <i class="fas fa-donate"></i></strong></button></a>
+	<a href="https://patreon.com/loam"><button class="btn btn-outline-dark social-patreon"><strong>Patreon </strong><i class="fab fa-patreon"></i></button></a>
 
 	<!-- The game! -->
 	<div class="webgl-content">

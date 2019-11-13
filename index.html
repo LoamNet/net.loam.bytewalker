@@ -31,14 +31,22 @@
     	</script>
 	
 	<style type="text/css">
+		h2 {
+			font-family: 'Chakra Petch', sans-serif;
+		}
 		.social-donate:hover {
-		  color: rgb(120, 200, 140);
+			  color: rgb(120, 200, 140);
 		}
 		.social-patreon:hover {
-		  color: rgb(249, 104, 84);
+			  color: rgb(249, 104, 84);
+		}
+		@keyframes hovering {
+			to { transform: translatey(-30px);}
 		}
 	</style>
 	
+	<!-- General style stuff -->
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -46,10 +54,10 @@
 </head>
 <body>
 	<!-- Aspirational donation buttons and friends -->
-	<h2>Bytewalker v0.1.1</h2>
+	<h2>Bytewalker v0.1.2</h2>
 	<br/>
-	<a href="https://ko-fi.com/loamnet"><button class="btn btn-outline-dark social-donate"><strong>Donate <i class="fas fa-donate"></i></strong></button></a>
-	<a href="https://patreon.com/loam"><button class="btn btn-outline-dark social-patreon"><strong>Patreon </strong><i class="fab fa-patreon"></i></button></a>
+	<a href="https://ko-fi.com/loamnet"><button class="btn btn-outline-dark social-donate"><i class="fas fa-donate"></i>&nbsp; Donate</button></a>
+	<a href="https://patreon.com/loam"><button class="btn btn-outline-dark social-patreon"><i class="fab fa-patreon"></i>&nbps; Patreon</button></a>
 
 	<!-- The game! -->
 	<div class="webgl-content">

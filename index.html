@@ -34,6 +34,9 @@
 		h2 {
 			font-family: 'Chakra Petch', sans-serif;
 		}
+		.small {
+			
+		}
 		.social-donate:hover {
 			  color: rgb(120, 200, 140);
 		}
@@ -53,14 +56,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- Aspirational donation buttons and friends -->
-	<h2>Bytewalker v0.1.2</h2>
-	<p>What is bytewalker?</strong></p>
-	<p>Bytewalker is a untity game that's current under development, and near the end of alpha! It's a 2D tile-based strategy game about digital warfare in a far future environment.</p>
-	<br/>
-	<a href="https://ko-fi.com/loamnet"><button class="btn btn-outline-dark social-donate"><i class="fas fa-donate"></i>&nbsp; Donate</button></a>
-	<a href="https://patreon.com/loam"><button class="btn btn-outline-dark social-patreon"><i class="fab fa-patreon"></i>&nbps; Patreon</button></a>
-
+	<!-- Aspirational donation buttons and friends, hopefully ads at some point! -->
+	<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h3>Bytewalker <span class="small">v0.1.2</span></h3>
+			<p><Strong>What is bytewalker?</strong></p>
+			<p>Bytewalker is a untity game that's current under development, and near the end of alpha! It's a 2D tile-based strategy game about digital warfare in a far future environment. The game is free-to-play and always will be, funded only by donations and some limited ads that don't interfere with gameplay.</p>
+			<a href="https://ko-fi.com/loamnet"><button class="btn btn-outline-dark social-donate"><i class="fas fa-donate"></i>&nbsp; Donate</button></a>
+			<a href="https://patreon.com/loam"><button class="btn btn-outline-dark social-patreon"><i class="fab fa-patreon"></i>&nbsp; Patreon</button></a>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	
 	<!-- The game! -->
 	<div class="webgl-content">
 		<div id="gameContainer" style="width: 800px; height: 600px"></div>
